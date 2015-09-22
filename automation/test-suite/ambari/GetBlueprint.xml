@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="Ambari-Get-Blueprint">
+  	
+  	<parameter name="ambarihost" value="hdtest013.svl.ibm.com"/>
+  	<parameter name="ambariclustername" value="hdp22"/>
+  	<parameter name="username" value="admin"/>
+  	<parameter name="password" value="adm2n"/>
+  	
+  	<test name="GetBlueprint">   	
+    	<classes>  
+       		 <class name="com.ibm.biginsights.ambari.GetBlueprint"/>
+    	</classes>
+  	</test>
+</suite>

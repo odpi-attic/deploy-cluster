@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="Ambari-AddValuePack">
+  	
+  	<parameter name="ambarihost" value=""/>
+  	<parameter name="username" value=""/>
+  	<parameter name="password" value=""/>
+  	<parameter name="ambariport" value=""/>
+  	<parameter name="https" value="" />
+  	<parameter name="services" value=""/>
+  	
+  	<test name="AddValuePack">     
+    <parameter name="browser" value="firefox" />
+      <classes>  
+           <class name="com.ibm.biginsights.ambari.RestartServices"/>
+      </classes>
+    </test>
+</suite>

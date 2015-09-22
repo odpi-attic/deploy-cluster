@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="Ambari-IbmServices">
+  	<parameter name="hostname" value="bdvs1033.svl.ibm.com"/>
+  	<parameter name="username" value="admin"/>
+  	<parameter name="password" value="admin"/>
+  	<parameter name="ambariPort" value="8080"/>
+  	<parameter name="clusterName" value="ODPInstall"/>
+  	<parameter name="service" value="ZOOKEEPER"/>
+  	<test name="IbmServices">   	
+    	<classes>         		 
+        		 <class name="com.ibm.biginsights.zookeeper.ZookeeperTests"/>
+       </classes>
+  	</test>
+</suite>

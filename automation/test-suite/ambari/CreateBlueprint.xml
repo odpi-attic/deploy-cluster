@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="Ambari-Create-Blueprint">
+  	
+  	<parameter name="ambarihost" value="bdvs478.svl.ibm.com"/>
+  	<parameter name="username" value="admin"/>
+  	<parameter name="password" value="admin"/>
+	<parameter name="masternodelist" value="bdvs478.svl.ibm.com"/>
+  	<parameter name="slavenodelist" value="bdvs479.svl.ibm.com,bdvs480.svl.ibm.com,bdvs481.svl.ibm.com"/>
+  	<parameter name="stackname" value="BIGINSIGHTS"/>
+  	
+  	<test name="CreateBlueprint">   	
+    	<classes>  
+       		 <class name="com.ibm.biginsights.ambari.CreateBlueprint"/>
+    	</classes>
+  	</test>
+</suite>

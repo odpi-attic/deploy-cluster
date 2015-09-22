@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="Add Hosts">
+   
+   <parameter name="ambariClustername" value="bicluster"/>
+   <parameter name="ambariHost" value="bdvs1005.svl.ibm.com"/>
+   <parameter name="ambariPort" value="8080"/>
+   <parameter name="username" value="admin"/>
+   <parameter name="password" value="admin"/>
+   <parameter name="newhost" value="bdvs1007.svl.ibm.com bdvs1008.svl.ibm.com"/>
+   <test name="Add Hosts">     
+      <classes>                
+             <class name="com.ibm.biginsights.ambari.AddHost"/>
+       </classes>
+   </test>
+</suite>

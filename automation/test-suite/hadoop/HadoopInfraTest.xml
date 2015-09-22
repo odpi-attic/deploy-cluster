@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="Ambari-IbmServices-Hadoop">
+  	
+  	<parameter name="ambarihost" value="hdtest.svl.ibm.com"/>
+  	<parameter name="username" value="admin"/>
+  	<parameter name="password" value="admin"/>
+  	<parameter name="ambariport" value="8080"/>
+  	<parameter name="ambariclustername" value="cluster1"/>
+  	<test name="IbmServices-HadoopInfraTest">   	
+    	<classes>   
+    	  	<class name="com.ibm.biginsights.hadoop.YarnInfraTest"/>    	 
+       		 <class name="com.ibm.biginsights.hadoop.HdfsInfraTest"/>
+        		<class name="com.ibm.biginsights.hadoop.Mr2InfraTest"/>  
+       </classes>
+  	</test>
+</suite>

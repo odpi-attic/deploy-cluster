@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="Ambari-Delete-Blueprint">
+  	
+  	<parameter name="ambarihost" value="hdtest102.svl.ibm.com"/>
+  	<parameter name="username" value="admin"/>
+  	<parameter name="password" value="admin"/>
+  	<parameter name="masternodelist" value="m1"/>
+  	<parameter name="slavenodelist" value="s1,s2,s3"/>
+  	
+  	<test name="DeleteBlueprint">   	
+    	<classes>  
+       		 <class name="com.ibm.biginsights.ambari.DeleteBlueprint"/>
+    	</classes>
+  	</test>
+</suite>

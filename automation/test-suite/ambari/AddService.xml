@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="Ambari-IbmServices">
+  	
+  	<parameter name="ambarihost" value="hdtest.svl.ibm.com"/>
+  	<parameter name="username" value="ad"/>
+  	<parameter name="password" value="ad"/>
+  	<parameter name="ambariport" value="8080"/>
+  	<parameter name="ambariclustername" value="cluster"/>
+   	<parameter name="mastercomponent" value="BIGSQL_MASTER"/>
+  	<parameter name="slavecomponent" value="BIGSQL_SLAVE"/>
+  	<parameter name="service" value="BIGSQL"/>
+  	<parameter name="masterhost" value="hdtest.svl.ibm.com"/>
+  	<parameter name="slavehost" value="hdtest.svl.ibm.com"/>
+  	<test name="IbmServices">   	
+    	<classes>         		 
+       		 <class name="com.ibm.biginsights.ambari.AddService"/>
+     	</classes>
+  	</test>
+</suite>

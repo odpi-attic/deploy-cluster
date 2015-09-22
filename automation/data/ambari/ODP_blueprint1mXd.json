@@ -1,0 +1,39 @@
+{ "host_groups" : [
+    { "name" : "master_group_1",
+      "components" : [
+        { "name" : "NAMENODE" },
+        { "name" : "SECONDARY_NAMENODE" },
+        { "name" : "NODEMANAGER" },
+        { "name" : "RESOURCEMANAGER" },
+        { "name" : "YARN_CLIENT" },
+        { "name" : "HDFS_CLIENT" },
+        { "name" : "MAPREDUCE2_CLIENT" },
+        { "name" : "APP_TIMELINE_SERVER" },
+        { "name" : "HISTORYSERVER" }, 
+        { "name" : "ZOOKEEPER_SERVER" },
+        { "name" : "ZOOKEEPER_CLIENT" }
+        ],
+      "cardinality" : "1" },
+    { "name" : "slave_group",
+      "components" : [
+        { "name" : "ZOOKEEPER_CLIENT" },
+        { "name" : "NODEMANAGER" },
+        { "name" : "DATANODE" } ],
+      "cardinality" : "1" } ],
+  "configurations": [
+    {
+      "global": {
+        "hive_metastore_user_passwd": "hive"
+      }
+    },
+    {
+      "hive-site": {
+        "javax.jdo.option.ConnectionUserName": "hive",
+        "javax.jdo.option.ConnectionPassword": "hive"
+      }
+    }
+  ],
+  "Blueprints" : {
+    "blueprint_name" : "blueprint1mXd",
+    "stack_name" : "HDP",
+    "stack_version" : "2.3" } }

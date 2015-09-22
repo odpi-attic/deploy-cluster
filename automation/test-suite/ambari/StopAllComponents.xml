@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="Ambari-Stop-All-Components">
+  	
+  	<parameter name="ambariclustername" value="bicluster"/>
+   <parameter name="ambarihost" value="bdvs1005.svl.ibm.com"/>
+   <parameter name="ambariport" value="8080"/>
+   <parameter name="username" value="admin"/>
+   <parameter name="password" value="admin"/>
+   <parameter name="hostname" value="bdvs1007.svl.ibm.com"/>  	
+  	<test name="Stop All Components">   	
+    	<classes>  
+       		 <class name="com.ibm.biginsights.ambari.StopAllComponents"/>
+    	</classes>
+  	</test>
+</suite>

@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="Ambari-Get-Clusters">
+  	
+  	<parameter name="ambarihost" value="hdtest181.svl.ibm.com"/>
+  	<parameter name="username" value="admin"/>
+  	<parameter name="password" value="admin"/>
+  	
+  	<test name="GetClusters">   	
+    	<classes>  
+       		 <class name="com.ibm.biginsights.ambari.GetClusters"/>
+    	</classes>
+  	</test>
+</suite>

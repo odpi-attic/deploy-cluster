@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="Ambari-Start-All-Services">
+  	
+  	<parameter name="ambarihost" value="hdtest195.svl.ibm.com"/>
+  	<parameter name="username" value="admin"/>
+  	<parameter name="password" value="admin"/>
+  	  	
+  	<test name="StartAllServices">   	
+    	<classes>  
+       		 <class name="com.ibm.biginsights.ambari.StartAllServices"/>
+    	</classes>
+  	</test>
+</suite>

@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="Ambari-IbmServices-Hadoop">
+  	
+  	<parameter name="ambarihost" value="hdtest.svl.ibm.com"/>
+  	<parameter name="username" value="admin"/>
+  	<parameter name="password" value="admin"/>
+  	<parameter name="newhost" value="hdtest.svl.ibm.com"/>
+  	<test name="IbmServices-HadoopClusterMgmtTest">   	
+    	<classes>   
+    		<class name="com.ibm.biginsights.hadoop.ClusterMgmt"/>      		 
+       		
+       </classes>
+  	</test>
+</suite>

@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="Ambari-Host-Mapping">
+  	
+  	<parameter name="ambarihost" value="hdtest181.svl.ibm.com"/>
+  	<parameter name="username" value="admin"/>
+  	<parameter name="password" value="admin"/>
+  	<parameter name="masternodelist" value="hdtest181.svl.ibm.com"/>
+  	<parameter name="slavenodelist" value="hdtest182.svl.ibm.com,hdtest183.svl.ibm.com,hdtest184.svl.ibm.com"/>
+  	<parameter name="authtype" value="LDAP"/>
+  	
+  	<test name="HostMapping">   	
+    	<classes>  
+       		 <class name="com.ibm.biginsights.ambari.HostMapping"/>
+    	</classes>
+  	</test>
+</suite>
